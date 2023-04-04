@@ -1,7 +1,9 @@
+type PI = 3.14;
+
 interface Calculator {
   add(a: number, b: number): number;
   subtract(a: number, b: number): number;
-  PI: 3.14
+  PI: PI
 }
 
 const add = (a: number, b: number): number => {
