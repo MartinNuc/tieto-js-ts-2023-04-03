@@ -1,13 +1,30 @@
 "use strict";
-console.log('Hello world');
-function add(a, b) {
-    return a + b;
-}
-function subtract(a, b) {
-    return a - b;
-}
-function sumOfArray(array) {
-    return array.reduce((acc, curr) => acc + curr, 0);
-}
-console.log(add(5, 3));
-console.log(sumOfArray([1, 2, 3, 4]));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const lodash_1 = __importDefault(require("lodash"));
+const people = [
+    {
+        id: 1,
+        name: 'Peter'
+    },
+    {
+        id: 2,
+        name: 'Rachel'
+    },
+    {
+        id: 3,
+        name: 'John'
+    },
+    {
+        id: 4,
+        name: 'Tim'
+    },
+    {
+        id: 5,
+        name: 'Zed'
+    }
+];
+const tim = lodash_1.default.find(people, person => person.id === 4);
+console.log(tim);
