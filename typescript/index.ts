@@ -1,16 +1,5 @@
-console.log('Hello world');
+import FourtyTwo, { add, sumOfArray } from "./calculations";
 
-function add(a: number, b: number): number {
-  return a + b;
-}
-
-function subtract(a: number, b: number): number {
-  return a - b;
-}
-
-function sumOfArray(array: Array<number>): number {
-  return array.reduce((acc, curr) => acc + curr, 0);
-}
-
-console.log(add(5, 3));
-console.log(sumOfArray([1,2,3,4]));
+console.log(FourtyTwo);
+console.log(add(1,3))
+console.log(sumOfArray([1,2,3]));
